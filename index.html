@@ -9,96 +9,95 @@
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
       body {
-        background-color: #000;
-        color: #fff;
-        font-family: sans-serif;
+        background-color: #fdfbf8;
+        color: #222;
+        font-family: 'Helvetica Neue', sans-serif;
       }
     </style>
   </head>
   <body>
     <!-- Header -->
-    <header class="flex items-center justify-between px-6 py-4 shadow-lg bg-black sticky top-0 z-50">
+    <header class="flex items-center justify-between px-8 py-6 bg-white shadow sticky top-0 z-50">
       <div class="flex items-center gap-2">
         <img src="logo.png" alt="Keymono Logo" class="h-10" />
-        <h1 class="text-2xl font-bold">KEYMONO</h1>
+        <h1 class="text-2xl font-semibold tracking-wide">KEYMONO</h1>
       </div>
-      <nav class="hidden md:flex gap-6 text-sm">
-        <a href="#inicio" class="hover:text-gray-400">Inicio</a>
-        <a href="#tienda" class="hover:text-gray-400">Tienda</a>
-        <a href="#sobre" class="hover:text-gray-400">Sobre mí</a>
-        <a href="#contacto" class="hover:text-gray-400">Contacto</a>
+      <nav class="hidden md:flex gap-8 text-sm font-medium">
+        <a href="#inicio" class="hover:underline">Inicio</a>
+        <a href="#tienda" class="hover:underline">Tienda</a>
+        <a href="#sobre" class="hover:underline">Sobre mí</a>
+        <a href="#contacto" class="hover:underline">Contacto</a>
       </nav>
       <div class="flex items-center gap-4">
-        <i class="fas fa-shopping-cart hover:text-gray-400 cursor-pointer"></i>
+        <i class="fas fa-shopping-cart cursor-pointer text-xl"></i>
       </div>
     </header>
 
     <!-- Hero -->
-    <section id="inicio" class="text-center py-20 px-4">
-      <h2 class="text-4xl md:text-6xl font-bold mb-4">Estilo que trasciende</h2>
-      <p class="text-gray-300 max-w-xl mx-auto">
-        Asesoría de imagen y ropa con personalidad. Elegancia, fuerza y actitud.
-      </p>
+    <section id="inicio" class="py-24 px-6 bg-[#fdfbf8] text-center">
+      <h2 class="text-4xl md:text-5xl font-light tracking-tight mb-6">Nueva Colección</h2>
+      <p class="text-lg text-gray-700 mb-6">Elegancia minimalista, detalles únicos.</p>
+      <a href="#tienda" class="text-lg underline text-gray-800 hover:text-black">Shop Now</a>
     </section>
 
     <!-- Tienda -->
-    <section id="tienda" class="px-6 py-16 bg-neutral-900">
-      <h3 class="text-3xl font-bold mb-10 text-center">Tienda Online</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <section id="tienda" class="px-6 py-20 bg-white">
+      <h3 class="text-3xl font-semibold mb-12 text-center">Tienda Online</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
         <!-- Productos de ejemplo -->
-        <div class="bg-neutral-800 p-4">
-          <div class="aspect-square bg-neutral-700 mb-4"></div>
-          <h4 class="text-lg font-semibold">Producto 1</h4>
-          <p class="text-sm text-gray-400">Descripción breve.</p>
+        <div class="bg-[#f4f2ef] p-6">
+          <div class="aspect-square bg-gray-200 mb-4"></div>
+          <h4 class="text-xl font-medium mb-1">Producto 1</h4>
+          <p class="text-sm text-gray-600">Descripción breve.</p>
           <p class="mt-2 font-bold">$0000</p>
-          <button class="mt-2 w-full bg-white text-black py-2 rounded">Agregar al carrito</button>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:opacity-90">Agregar al carrito</button>
         </div>
-        <div class="bg-neutral-800 p-4">
-          <div class="aspect-square bg-neutral-700 mb-4"></div>
-          <h4 class="text-lg font-semibold">Producto 2</h4>
-          <p class="text-sm text-gray-400">Descripción breve.</p>
+        <div class="bg-[#f4f2ef] p-6">
+          <div class="aspect-square bg-gray-200 mb-4"></div>
+          <h4 class="text-xl font-medium mb-1">Producto 2</h4>
+          <p class="text-sm text-gray-600">Descripción breve.</p>
           <p class="mt-2 font-bold">$0000</p>
-          <button class="mt-2 w-full bg-white text-black py-2 rounded">Agregar al carrito</button>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:opacity-90">Agregar al carrito</button>
         </div>
-        <div class="bg-neutral-800 p-4">
-          <div class="aspect-square bg-neutral-700 mb-4"></div>
-          <h4 class="text-lg font-semibold">Producto 3</h4>
-          <p class="text-sm text-gray-400">Descripción breve.</p>
+        <div class="bg-[#f4f2ef] p-6">
+          <div class="aspect-square bg-gray-200 mb-4"></div>
+          <h4 class="text-xl font-medium mb-1">Producto 3</h4>
+          <p class="text-sm text-gray-600">Descripción breve.</p>
           <p class="mt-2 font-bold">$0000</p>
-          <button class="mt-2 w-full bg-white text-black py-2 rounded">Agregar al carrito</button>
+          <button class="mt-3 w-full bg-black text-white py-2 rounded hover:opacity-90">Agregar al carrito</button>
         </div>
       </div>
     </section>
 
     <!-- Sobre mí -->
-    <section id="sobre" class="py-20 px-6 text-center bg-black">
-      <h3 class="text-3xl font-bold mb-6">Sobre mí</h3>
-      <p class="max-w-2xl mx-auto text-gray-300">
+    <section id="sobre" class="py-24 px-6 bg-[#fdfbf8] text-center">
+      <h3 class="text-3xl font-semibold mb-6">Sobre mí</h3>
+      <p class="max-w-2xl mx-auto text-gray-700 text-lg">
         Soy asesora de imagen y fotógrafa. Keymono nace como una fusión entre estilo, arte visual y presencia. Mi objetivo es ayudarte a reflejar tu mejor versión.
       </p>
     </section>
 
     <!-- Contacto -->
-    <section id="contacto" class="py-16 px-6 bg-neutral-900 text-center">
-      <h3 class="text-3xl font-bold mb-6">Contacto</h3>
-      <div class="flex justify-center gap-8 text-gray-300 text-xl">
+    <section id="contacto" class="py-20 px-6 bg-white text-center">
+      <h3 class="text-3xl font-semibold mb-8">Contacto</h3>
+      <div class="flex justify-center gap-10 text-gray-600 text-2xl">
         <a href="https://www.instagram.com/keymonok" target="_blank">
-          <i class="fab fa-instagram hover:text-white"></i>
+          <i class="fab fa-instagram hover:text-black"></i>
         </a>
         <a href="mailto:keymono@gmail.com">
-          <i class="fas fa-envelope hover:text-white"></i>
+          <i class="fas fa-envelope hover:text-black"></i>
         </a>
         <a href="https://wa.me/5490000000000">
-          <i class="fab fa-whatsapp hover:text-white"></i>
+          <i class="fab fa-whatsapp hover:text-black"></i>
         </a>
         <a href="https://keymono.mitiendanube.com">
-          <i class="fas fa-store hover:text-white"></i>
+          <i class="fas fa-store hover:text-black"></i>
         </a>
       </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-6 text-center text-sm text-gray-500 bg-black">
+    <footer class="py-6 text-center text-sm text-gray-500 bg-[#fdfbf8]">
       © 2025 Keymono. Todos los derechos reservados.
     </footer>
   </body>
