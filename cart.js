@@ -1,8 +1,8 @@
 
 const products = [
-    { id: 1, name: "Remera Oversize", price: 8000, img: "assets/remera1.jpg" },
+    { id: 1, name: "Remera Oversize", price: 8000, img: "assets/remera1.png" },
     { id: 2, name: "Buzo Negro", price: 15000, img: "assets/buzo1.jpg" },
-    { id: 3, name: "Pantalón Cargo", price: 12000, img: "assets/pantalon1.jpg" }
+    { id: 3, name: "Pantalón Cargo", price: 12000, img: "assets/pantalon1.png" }
 ];
 let cart = [];
 function renderProducts() {
