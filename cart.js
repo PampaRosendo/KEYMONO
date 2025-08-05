@@ -51,3 +51,9 @@ function copyAlias() {
     alert("Alias copiado: " + alias);
 }
 window.onload = renderProducts;
+
+function toggleCart() {
+    const cartEl = document.getElementById("cart");
+    cartEl.classList.toggle("show");
+    cartEl.classList.toggle("hidden");
+}
