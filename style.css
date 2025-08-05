@@ -40,23 +40,45 @@ button {
     cursor: pointer;
     border-radius: 4px;
 }
+/* Carrito lateral */
 #cart {
-    background: #fff;
-    color: #000;
-    padding: 1rem 2rem;
-}
-#checkout-popup {
     position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: #fff;
-    color: #000;
-    padding: 2rem;
-    border: 2px solid #000;
-    border-radius: 10px;
-    z-index: 1000;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background-color: #1a1a1a;
+    color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1001;
 }
-.hidden {
-    display: none;
+
+#cart.show {
+    transform: translateX(0%);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+#cart button {
+    background-color: #fff;
+    color: #000;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
 }
