@@ -5,6 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Keymono Tienda</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    header {
+      background: #000;
+      padding: 1rem;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: white;
+      display: inline-block;
+      vertical-align: middle;
+      position: relative;
+      z-index: 1;
+    }
+    header::before {
+      content: '';
+      background: url('64c2135d-4044-469c-99de-e6c913f0b949.png') no-repeat center center;
+      background-size: contain;
+      opacity: 0.15;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 150px;
+      height: 150px;
+      z-index: 0;
+    }
+    #cart-btn {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      color: white;
+      cursor: pointer;
+      z-index: 2;
+    }
+    #cart {
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 300px;
+      height: 100%;
+      background: #222;
+      color: white;
+      padding: 1rem;
+      overflow-y: auto;
+      box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    }
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cart-header button {
+      background: #fff;
+      color: #000;
+      border: none;
+      font-size: 1rem;
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+    }
+    #checkout-popup {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: #fff;
+      color: #000;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -25,7 +98,7 @@
     <button onclick="checkout()">Finalizar compra</button>
   </section>
 
-  <!-- Popup de alias -->
+  <!-- Popup de alias oculto inicialmente -->
   <div id="checkout-popup" class="hidden">
     <h2>Checkout</h2>
     <p>Pagá por MercadoPago con el siguiente alias:</p>
