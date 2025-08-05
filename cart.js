@@ -9,7 +9,7 @@ const products = [
     id: 2,
     name: "Buzo Negro",
     price: 15000,
-    img: "assets/b2.png"
+    img: "b2.png"
   },
   {
     id: 3,
