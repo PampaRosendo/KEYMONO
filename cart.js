@@ -3,19 +3,19 @@ const products = [
     id: 1,
     name: "Remera Oversize",
     price: 8000,
-    image: "img/gray-hoodie.png"
+    image: "img/b1.jpg"
   },
   {
     id: 2,
     name: "Buzo Negro",
     price: 15000,
-    image: "img/black-hoodie.png"
+    image: "img/b2.png"
   },
   {
     id: 3,
     name: "Pantalón Cargo",
     price: 12000,
-    image: "img/blue-hoodie.png"
+    image: "img/b3.png"
   }
 ];
 
